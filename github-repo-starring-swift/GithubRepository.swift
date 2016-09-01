@@ -8,12 +8,14 @@
 
 import UIKit
 
-class GithubRepository {
+class GithubRepository
+{
     var fullName: String
     var htmlURL: NSURL
     var repositoryID: String
     
-    init(dictionary: NSDictionary) {
+    init(dictionary: NSDictionary)
+    {
         guard let
             name = dictionary["full_name"] as? String,
             valueAsString = dictionary["html_url"] as? String,
